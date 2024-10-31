@@ -18,10 +18,13 @@ class SquareBottomSheet extends StatelessWidget {
     final double minChildSize = cardHeight / screenHeight;
 
     final double childSize = ((cardHeight + 4) * squareCount + 36);
-    final double initialChildSize =
-        (childSize <= screenHeight * 0.5) ? childSize / screenHeight : 0.6;
+    double initialChildSize =
+        (childSize <= screenHeight * 0.5) ? (childSize / screenHeight) : 0.6;
     final double maxChildSize =
-        (childSize <= screenHeight) ? childSize / screenHeight : 0.95;
+        (childSize <= screenHeight) ? (childSize / screenHeight) : 0.95;
+    if (initialChildSize > maxChildSize) {
+      initialChildSize = maxChildSize;
+    }
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 18.0),
       child: DraggableScrollableSheet(
