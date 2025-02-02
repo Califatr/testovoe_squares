@@ -1,16 +1,12 @@
 # testovoe
+Тестовое задание 
+1) На главном экране кнопка "Выбрать квадратик"
+2) При нажатии на кнопку открывается боттом шит
+3) На боттом шите случайное количество (1-20) пронумерованных красных контейнеров высотой 100, шириной на весь боттом шит
+4) При нажатии на контейнер боттом шит закрывается, а выбранный номер сохраняется в стейт
+5) История сделанных выборов отображается любым удобным способом на главном экране - список чисел через запятую, например
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- можно использовать любой привычный стейтменеджер
+- приложение должно корректно работать на веб на любой ширине экрана
+- приложение должно содержать пояснения для пользователя
+- боттом шит должен опрятно отображаться по высоте при разном количестве контейнеров, прокрутка должна работать при необходимости
